@@ -46,7 +46,7 @@ body{
 	font-size: 2em;
 	font-family:"Neue Kabel W01 Black" !important;
 	padding: 0;
-	margin-left: calc(25vw / 6);
+	
 	background-color: white;
 	background-image: linear-gradient(#f9a602, #f9a602);
 	background-size: 0%;
@@ -71,8 +71,7 @@ body{
 
 p{
 
-	padding-right: 1em;
-	padding-left: 1em; 
+	
 	font-family: DINNextW1G !important;
 	color: white;
 	width: auto;
@@ -179,14 +178,12 @@ a {
 	
 }
 
-#catalogue #tuiles #col2 img{
-	width: 100%;
-}
+
 
 #catalogue #tuiles #col2 img{
 	border-radius: 10px;
-
 	width: 100%;
+	
 }
 
 
@@ -197,6 +194,7 @@ a {
 	padding-bottom: 2%;
 	width: 100%;
 	border-radius: 10px;
+	
 	
 
 	font-size: larger;
