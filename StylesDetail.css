@@ -1,0 +1,98 @@
+@font-face {font-family: "Neue Kabel W01 Black";
+	src: url("fonts/0ef5c927253f0c37b54e6f94cd732784.eot"); /* IE9*/
+	src: url("fonts/0ef5c927253f0c37b54e6f94cd732784.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.woff2") format("woff2"), /* chrome、firefox */
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.woff") format("woff"), /* chrome、firefox */
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.svg#Neue Kabel W01 Black") format("svg"); /* iOS 4.1- */
+  }
+
+@font-face {font-family: "DINNextW1G";
+	src: url("fonts/DINNextW1G.otf");
+  }
+
+
+:root{
+	--grisFonce: #111618;
+	--grisClair: #232E33;	
+	--orange: #F9A602;
+	--bleu: #067DB3;
+	--violet: #922FEE;
+	--jaune: #F9E259;
+}
+
+body{
+	font-family: Lato, sans-serif;
+	margin:0;
+	background-color: var(--grisFonce);
+}
+
+nav{
+	width: 100vw;
+	background-color: var(--grisFonce);
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: calc(1.5vw) 0;
+}
+
+nav li {
+	overflow-wrap: anywhere;
+}
+
+nav li a {
+	font-family:"Neue Kabel W01 Black" !important;
+	font-size: calc(1.5vw);
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white !important;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-top: calc(1.5em - 0.75vw);
+	padding-bottom: calc(1.5em - 0.75vw);
+	position: relative;
+}
+
+nav li a::after{
+	position: absolute;
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	border-radius: 5px;
+	background-size: 400%;
+	z-index: 0;
+	filter: blur(5px);
+	transition: opacity .3s ease-in-out;
+	animation: animate 5s linear infinite;
+	left: 50%;
+	display: block;
+	height: 0.4em;
+	width: 0%;
+	bottom: -0.4em;
+	transition: ease-in-out .3s;
+	transform: translateX(-50%);
+}
+
+nav li a:hover::after{
+	width: 100%;
+}
+
+nav li:nth-last-child(2){
+	margin-left: auto;
+}
+
+#carouselBootstrap {
+	height: calc(100% - 6em);
+	width: 72vw;
+	padding-top: auto;
+	display: flex;
+	margin-right: auto;
+    margin-left: auto;
+	align-items: center;
+
+}
