@@ -1,0 +1,209 @@
+@font-face {font-family: "Neue Kabel W01 Black";
+	src: url("fonts/0ef5c927253f0c37b54e6f94cd732784.eot"); /* IE9*/
+	src: url("fonts/0ef5c927253f0c37b54e6f94cd732784.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.woff2") format("woff2"), /* chrome、firefox */
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.woff") format("woff"), /* chrome、firefox */
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("fonts/0ef5c927253f0c37b54e6f94cd732784.svg#Neue Kabel W01 Black") format("svg"); /* iOS 4.1- */
+  }
+
+@font-face {font-family: "DINNextW1G";
+	src: url("fonts/DINNextW1G.otf");
+  }
+
+
+  :root{
+	--grisFonce: #111618;
+	--grisClair: #232E33;	
+	--orange: #F9A602;
+	--bleu: #067DB3;
+	--violet: #922FEE;
+	--jaune: #F9E259;
+}
+
+body{
+	display: flex;
+
+	font-family:"Neue Kabel W01 Black" ,Lato, sans-serif;
+	margin: 0%;
+	background-color: #232e33;
+}
+
+
+
+/*Titres*/
+
+.bg-trans {		
+	font-size: 2vw;
+	padding-top: 2px;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+	padding: 0;
+}
+
+.bg-trans a {
+	font-size: 2em;
+	font-family:"Neue Kabel W01 Black" !important;
+	padding: 0;
+	margin-left: calc(25vw / 6);
+	background-color: white;
+	background-image: linear-gradient(#f9a602, #f9a602);
+	background-size: 0%;
+	background-repeat: no-repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:transparent !important;
+	position: relative;
+	transition-property: background-size;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.3s;
+}
+
+
+.bg-trans a:hover{
+	background-size: 100%;
+}
+
+/*Textes*/
+
+p{
+
+	padding-right: 1em;
+	padding-left: 1em; 
+	font-family: DINNextW1G !important;
+	color: white;
+	width: auto;
+ 	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none !important; 
+}
+
+
+
+#nav_selection {
+	height: min-content;
+	color: white;
+	display: flex;
+	background-color:#922FEE;
+	padding-top: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 100em;
+
+	
+}
+
+#nav_selection #menu_select{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color:#922FEE;
+}
+#nav_selection #menu_select #case{
+	font-family: DINNextW1G !important;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+
+
+#nav_selection button{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 20%;
+	padding-left: 20%;
+	border-radius: 10px;
+
+	display: flex;
+	font-size: larger;
+	color: white;
+	background-color:#232E33;
+
+
+}
+
+
+
+#catalogue{
+	margin-top: 0;
+	flex:1;
+	background-color: #111618;
+		
+}
+
+#catalogue #tuiles{
+	background-color: #232E33;
+	color: white;
+	margin:5%;
+	display: flex;
+	width: auto;
+	height: 20em;
+	border-radius: 20px;
+	align-items: center;
+	padding:2%;
+}
+
+
+#catalogue #tuiles #col1{
+
+	height: 100%;
+	width: 60%;
+	margin-right: 2%;
+	display: flex;
+	flex-direction: column;
+
+	
+}
+#catalogue #tuiles #col1 h2{
+	font-size: 2em;
+}
+
+
+
+#catalogue #tuiles #col2{
+
+	height: 100%;
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content:  space-between;
+	
+}
+
+#catalogue #tuiles #col2 img{
+	width: 100%;
+}
+
+#catalogue #tuiles #col2 img{
+	border-radius: 10px;
+
+	width: 100%;
+}
+
+
+#catalogue #tuiles #col2 button{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 100%;
+	border-radius: 10px;
+	
+
+	font-size: larger;
+	color: white;
+	background-color: #922FEE;
+
+
+}
+
+
