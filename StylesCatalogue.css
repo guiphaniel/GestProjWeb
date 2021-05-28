@@ -78,6 +78,7 @@ p{
  	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: justify;
+	font-size: large;
 }
 
 a {
@@ -121,7 +122,7 @@ a {
 	padding-right: 20%;
 	padding-left: 20%;
 	border-radius: 10px;
-
+	border-style: none;
 	display: flex;
 	font-size: larger;
 	color: white;
@@ -142,10 +143,10 @@ a {
 #catalogue #tuiles{
 	background-color: #232E33;
 	color: white;
-	margin:5%;
+	margin:3em;
 	display: flex;
 	width: auto;
-	height: 20em;
+	height: 25em;
 	border-radius: 20px;
 	align-items: center;
 	padding:2%;
@@ -181,8 +182,11 @@ a {
 
 
 #catalogue #tuiles #col2 img{
-	border-radius: 10px;
+
 	width: 100%;
+	border-radius: 10px;
+	
+	
 	
 }
 
@@ -194,7 +198,7 @@ a {
 	padding-bottom: 2%;
 	width: 100%;
 	border-radius: 10px;
-	
+	border-style: none;
 	
 
 	font-size: larger;
