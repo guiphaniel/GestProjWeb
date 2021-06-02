@@ -20,10 +20,11 @@
 	--violet: #922FEE;
 	--jaune: #F9E259;
 }
-
 body{
-	font-family: Lato, sans-serif;
-	margin:0;
+	
+
+	font-family:"Neue Kabel W01 Black" ,Lato, sans-serif;
+	margin: 0%;
 	background-color: var(--grisFonce);
 }
 
