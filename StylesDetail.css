@@ -12,7 +12,7 @@
 }
 
 :root {
-  font-family: Lato, sans-serif;
+  font-family: DINNextW1G;
   --grisFonce: #111618;
 	--grisClair: #232E33;	
 	--orange: #F9A602;
@@ -255,13 +255,23 @@ html{
   main{
    
     background-color: var(--grisFonce);
+    padding-top: 5em;
 	padding-left: 5em;
 	padding-right: 5em;
     
   }
-  main h1{
-	color: var(--jaune);
+
+  main #retour{
+    display: flex;
+    align-items: center;    
   }
+
+  main #retour i {
+    font-size: 25px;
+    color: var(--violet);
+    margin-right: 10px;
+  }
+
   main #tuiles {
 	background-color: var(--grisClair);
 	padding-top: 2em;
@@ -274,15 +284,47 @@ html{
   main #tuiles #headBar{
 	display: flex;
 	justify-content: space-between;
+  align-items: center;
+  }
+  main #tuiles #headBar #blockReserStar {
+    display: flex;
+
+    align-items: center;
+    
+    }
+
+  main #tuiles #headBar #blockReserStar button{
+    font-family: DINNextW1G !important;
+    font-size: large;
+    color: white;
+    background-color: var(--violet);
+    margin-left: 15px;
+    
+    }
+  main #tuiles #headBar #blockReserStar .fa{
+	  color: white;
+    font-size: 25px;
+    
   }
 
-  main #tuiles #headBar #blockReserStar .fa{
-	color: white;
-  }
   main #tuiles #headBar #blockReserStar .checked{
 	color: var(--jaune);
+
+  
   }
 
+main #tuiles #details{
+  display: flex;
+  margin-top: 2em;
+  
+}
+main #tuiles #details #texte{
+  flex :2;
+}
+main #tuiles #details #caract{
+  flex :1;
+  background-color: var(--grisFonce);
+}
   
   main #tuiles #photos  {
     
@@ -314,6 +356,18 @@ html{
   
   /*Titres*/
 
+
+
+main #tuiles h1{
+  font-size: 3em;
+	font-family:"Neue Kabel W01 Black" !important;
+	padding: 0;
+	margin: 0 !important;
+
+  text-transform: uppercase;
+  color: white !important;
+
+}
   
   /*Textes*/
   
@@ -322,6 +376,7 @@ html{
     padding-right: 1em;
     padding-left: 1em; 
     font-family: DINNextW1G !important;
+    font-size: larger;
     color: white;
     width: auto;
     overflow: hidden;
@@ -397,4 +452,48 @@ html{
 
 .baguetteBox-button {
     background-color: transparent !important;
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 100% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+
+
+.bg-trans {		
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  padding: 0;
+}
+
+.bg-trans a {
+  font-size: 2em;
+  font-family:"Neue Kabel W01 Black" !important;
+  padding: 0;
+  
+  background-color: var(--violet);
+  background-image: linear-gradient(white,white);
+  background-size: 0%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:transparent !important;
+  transition-property: background-size;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+
+.bg-trans a:hover{
+  background-size: 100%;
 }
