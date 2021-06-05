@@ -263,14 +263,25 @@ html{
 
   main #retour{
     display: flex;
-    align-items: center;    
+    margin-bottom: 2em;
+   
   }
 
-  main #retour i {
-    font-size: 25px;
-    color: var(--violet);
-    margin-right: 10px;
-  }
+main #retour div {
+  font-size: 25px;
+  margin-right: 10px;
+  
+}
+
+main #retour  a {
+  text-decoration: none !important; 
+  display: flex;
+  align-items: center;
+}
+main #retour h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
   main #tuiles {
 	background-color: var(--grisClair);
@@ -319,13 +330,28 @@ main #tuiles #details{
   
 }
 main #tuiles #details #texte{
-  flex :2;
+  flex :4;
 }
 main #tuiles #details #caract{
-  flex :1;
-  background-color: var(--grisFonce);
+  border-radius: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 4em;
+  flex :3;
+  background-color: var(--violet);
 }
-  
+main #tuiles #details #caract ul{
+  margin-bottom: 0;
+}
+main #tuiles #details #caract ul li{
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+main #tuiles #details #caract ul li p{
+  margin-bottom: 0px;
+}
   main #tuiles #photos  {
     
     

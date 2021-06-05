@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="StylesDetail.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
         
 
@@ -22,7 +23,7 @@
           </li>
   
           <li class="my-nav-item">
-            <a href="#" class="my-nav-link">
+            <a href="Catalogue.html" class="my-nav-link">
               <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-book-open fa-w-18 fa-xs"><g class="fa-group"><path fill="currentColor" d="M576 62.75v337.84c0 16.23-13.13 29.77-30 30.66-49.47 2.6-149.52 12.1-218.7 46.92-10.65 5.36-23.28-1.94-23.28-13.49V100.81a15.37 15.37 0 0 1 7.27-13.17c67.24-41.16 176.16-52.48 231-55.59C560.64 31 576 45 576 62.75z" class="fa-secondary"></path><path fill="currentColor" d="M264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31 0 45 0 62.75V400.6c0 16.24 13.13 29.78 30 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63a15.05 15.05 0 0 0-7.25-12.99z" class="fa-primary"></path></g></svg>
               <span class="link-text">Catalogue</span>
             </a>
@@ -67,11 +68,11 @@
         </ul>
       </nav>
       <main>
-          <a href="Catalogue.html"><div id="retour" >
-            <i class="fa fa-arrow-left"></i>
-            <h1 class="bg-trans"><a href="#">Retour</a></h1>
-            
-          </div></a>
+          <div id="retour"class="bg-trans"><a href="Catalogue.html">
+            <div class="fa fa-arrow-left"></div>
+            <h1>Retour</h1>
+            </a>
+          </div>
           <div id="tuiles">
               <div id="headBar">
                   <h1>Titre chambre</h1>
@@ -125,9 +126,23 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
               </div>
               <div id="caract">
-                <div id="icon">
-
-                </div>
+                <ul id="icon">
+                  <li>
+                    <i class="material-icons" style="font-size:36px">bed</i>
+                    <p>1 lit double</p>
+                  </li>
+                  <li><i class="material-icons" style="font-size:36px">wifi</i>
+                    <p>Wifi illimité</p>
+                  </li>
+                  <li>
+                    <i class="material-icons" style="font-size:36px">tv</i>
+                    <p>TV 4K</p>
+                  </li>
+                  <li>
+                    <i class="material-icons" style="font-size:36px">sports_esports</i>
+                    <p>PlayStation 4 et Xbox One</p>
+                  </li>
+                </ul>
               </div>
 
             </div>
@@ -138,5 +153,6 @@
       <script>
           baguetteBox.run('.tz-gallery');
       </script>
+     
 
 </html>
