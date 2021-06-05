@@ -149,14 +149,14 @@ nav li:nth-last-child(2){
 
 
 #nav_selection {
-	height: min-content;
+	
 	color: white;
 	display: flex;
 	background-color:#922FEE;
 	padding-top: 3em;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-bottom: 100em;
+	
 	font-size: larger;
 
 	
@@ -164,8 +164,9 @@ nav li:nth-last-child(2){
 
 #nav_selection #menu_select{
 	display: flex;
+	
 	flex-direction: column;
-	justify-content: space-evenly;
+	
 	background-color:#922FEE;
 }
 /*------ CheckBox----------*/
@@ -295,7 +296,15 @@ nav li:nth-last-child(2){
 	display: flex;
 	font-size: larger;
 	color: white;
-	background-color:#232E33;
+	background-color:var(--grisClair);
+}
+#nav_selection button:hover {
+	background-color: var(--grisFonce);
+	cursor: pointer;
+}
+#nav_selection button:active {
+	background-color: var(--grisClair);
+	cursor: pointer;
 }
 
 #banniere {
@@ -318,6 +327,7 @@ nav li:nth-last-child(2){
 }
 
 #catalogue #tuiles{
+	
 	background-color: #232E33;
 	color: white;
 	margin:3em;
@@ -336,14 +346,15 @@ nav li:nth-last-child(2){
 	margin-right: 2%;
 	display: flex;
 	flex-direction: column;
-
-	
 }
+
 #catalogue #tuiles #col1 h2{
 	font-size: 2em;
 }
 
-
+#catalogue #tuiles #col1 p{
+	font-size: 1.5em;
+}
 
 #catalogue #tuiles #col2{
 
@@ -377,8 +388,9 @@ nav li:nth-last-child(2){
 	border-radius: 10px;
 	border-style: none;
 	
-
-	font-size: larger;
+	font-family:DINNextW1G !important;
+	
+	font-size: 1.5em;
 	color: white;
 	background-color: #922FEE;
 }

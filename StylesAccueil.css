@@ -446,3 +446,42 @@ main {
   a {
     text-decoration: none !important; 
   }
+
+  /*Footer*/
+  footer{
+    background: var(--grisFonce);
+
+  }
+  footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+
+
+  }
+  footer ul li{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    background: var(--grisFonce);
+    transition: var(--transition-speed);
+    text-transform: uppercase;
+    font-family: Neue Kabel W01 Black;
+    padding-right: 1.5rem;  display: flex;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    background: var(--grisFonce);
+    transition: var(--transition-speed);
+    text-transform: uppercase;
+    font-family: Neue Kabel W01 Black;
+    padding-right: 1.5rem;
+  }
+
+  footer ul li:nth-last-child(4){
+    margin-left: auto;
+  }
