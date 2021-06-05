@@ -149,14 +149,14 @@ nav li:nth-last-child(2){
 
 
 #nav_selection {
-	
+	height: min-content;
 	color: white;
 	display: flex;
 	background-color:#922FEE;
 	padding-top: 3em;
 	padding-left: 1em;
 	padding-right: 1em;
-	
+	padding-bottom: 100em;
 	font-size: larger;
 
 	
@@ -164,127 +164,19 @@ nav li:nth-last-child(2){
 
 #nav_selection #menu_select{
 	display: flex;
-	
 	flex-direction: column;
-	
+	justify-content: space-evenly;
 	background-color:#922FEE;
 }
-/*------ CheckBox----------*/
-#nav_selection #menu_select .container{
-	font-family: DINNextW1G !important;
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-#nav_selection #menu_select .container input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-#nav_selection #menu_select .checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	border-radius: 5px;
-	background-color: #eee;
-}
-#nav_selection #menu_select .container:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-#nav_selection #menu_select .container input:checked ~ .checkmark {
-	background-color:var(--grisClair);
-}
-#nav_selection #menu_select .checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-#nav_selection #menu_select .container input:checked ~ .checkmark:after {
-	display: block;
-}
-
-#nav_selection #menu_select .container .checkmark:after {
-	left: 9px;
-	top: 5px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-  }
-/* Fin checkBox*/
-
-
-/*--------Slider--------*/
-#nav_selection #menu_select p {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#nav_selection #menu_select .slidecontainer {
-	width: 100%;
-	display: flex;
-	align-items: center;
-}
-#nav_selection #menu_select .slider {
-	margin-left: 10px;
-	margin-right: 10px;
-	border-radius: 10px;
-	-webkit-appearance: none;
-	height: 15px;
-	background: #d3d3d3;
-	outline: none;
-	opacity: 0.7;
-	-webkit-transition: .2s;
-	transition: opacity .2s;
-}
-
-#nav_selection #menu_select .slider:hover {
-	opacity: 1;
-}
-  
-#nav_selection #menu_select .slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 25px;
-	border-radius: 25px;
-	height: 25px;
-	background:var(--grisClair);
-	cursor: pointer;
-}
-  
-#nav_selection #menu_select .slider::-moz-range-thumb {
-	width: 25px;
-	height: 25px;
-	background: var(--grisClair);
-	cursor: pointer;
-}
-
-
 #nav_selection #menu_select #case{
 	font-family: DINNextW1G !important;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-/*--------Fin Slider--------*/
+
 
 
 #nav_selection button{
-	font-family:DINNextW1G;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 5%;
@@ -296,15 +188,7 @@ nav li:nth-last-child(2){
 	display: flex;
 	font-size: larger;
 	color: white;
-	background-color:var(--grisClair);
-}
-#nav_selection button:hover {
-	background-color: var(--grisFonce);
-	cursor: pointer;
-}
-#nav_selection button:active {
-	background-color: var(--grisClair);
-	cursor: pointer;
+	background-color:#232E33;
 }
 
 #banniere {
@@ -327,7 +211,6 @@ nav li:nth-last-child(2){
 }
 
 #catalogue #tuiles{
-	
 	background-color: #232E33;
 	color: white;
 	margin:3em;
@@ -346,15 +229,14 @@ nav li:nth-last-child(2){
 	margin-right: 2%;
 	display: flex;
 	flex-direction: column;
-}
 
+	
+}
 #catalogue #tuiles #col1 h2{
 	font-size: 2em;
 }
 
-#catalogue #tuiles #col1 p{
-	font-size: 1.5em;
-}
+
 
 #catalogue #tuiles #col2{
 
@@ -388,9 +270,8 @@ nav li:nth-last-child(2){
 	border-radius: 10px;
 	border-style: none;
 	
-	font-family:DINNextW1G !important;
-	
-	font-size: 1.5em;
+
+	font-size: larger;
 	color: white;
 	background-color: #922FEE;
 }
