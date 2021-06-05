@@ -13,7 +13,7 @@
     		<li> <a href="#">Evènement</a></li>   
     		<li> <a href="#">Actualités</a></li>   
     		<li> <a href="#">Activités alentours</a></li>    	
-            <li> <a href="#">Panier</a></li>   
+          <li> <a href="#">Panier</a></li>   
     		<li> <a href="#">Compte</a></li>
     	</ul>
     </nav>
@@ -21,36 +21,35 @@
     <div id="content">
       <div id="nav_selection">
         <div id="menu_select">
-          <div id="case">
+         
+          <label class="container">TV 4k
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">PS4
             <input type="checkbox">
-            <label for="Tv4k"> TV 4k</label><br>
-          </div>
-  
-          <div id="case">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Casque VR
             <input type="checkbox">
-            <label for="Tv4k"> PS4</label><br>
-          </div>
-          <div id="case">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Wifi
             <input type="checkbox">
-            <label for="Tv4k"> Casque VR</label><br>
-          </div>
-  
-          <div id="case">
-            <input type="checkbox">
-            <label for="Wifi"> Wifi</label><br>
-          </div>
-  
-          <div id="case">
+            <span class="checkmark"></span>
+          </label>
+          <p>Prix</p>
+          <div class="slidecontainer"> 
+            
+            <p>0</p>
             <div>
-              <label for="Prix">Prix</label><br>
+              
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
+              
             </div>
-            <div>
-              <label for="0">0</label>
-              <input type="range" id="a" name="a" value="50">
-              <label for="100">100</label><br>
-            </div>
-  
+            <p>100</p>
           </div>
+
   
   
           <button type="button" class="btn">Filtrer</button>
@@ -62,33 +61,33 @@
       <div id="catalogue">
           <div id="tuiles">
             <div id="col1">
-              <h2 class="bg-trans"><a href="#">Titre chambre 1</a></h2>
+              <h2 class="bg-trans"><a href="DetailChambre.html">Titre chambre 1</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div id="col2">
               <img src="images/chambre1.jpg"alt="banniere" id="photo">
-              <a href="#"><button  type="button" class="btn">Selectionner</button></a>
+              <a href="DetailChambre.html"><button  type="button" class="btn">Selectionner</button></a>
   
             </div>
           </div>
           <div id="tuiles">
             <div id="col1">
-              <h2 class="bg-trans"><a href="#">Titre chambre 2</a></h2>
+              <h2 class="bg-trans"><a href="DetailChambre.html">Titre chambre 2</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div id="col2">
               <img src="images/chambre4.jpg"alt="banniere" id="photo">
-              <a href="#"><button  type="button" class="btn">Selectionner</button></a>
+              <a href="DetailChambre.html"><button  type="button" class="btn">Selectionner</button></a>
             </div>
           </div>
           <div id="tuiles">
             <div id="col1">
-              <h2 class="bg-trans"><a href="#">Titre chambre 3</a></h2>
+              <h2 class="bg-trans"><a href="DetailChambre.html">Titre chambre 3</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div id="col2">
-              <img  src="images/chambre2.jpg"alt="banniere" id="photo">
-              <a href="#"><button  type="button" class="btn">Selectionner</button></a>
+              <img  src="images/chambre5.jpg"alt="banniere" id="photo">
+              <a href="DetailChambre.html"><button  type="button" class="btn">Selectionner</button></a>
   
             </div>
           </div>
