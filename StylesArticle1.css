@@ -271,7 +271,7 @@ main {
 	position: absolute;
 	float: left;
 	width: 100%;
-	
+	left: -1px;
 }
 
 #banniere #logo{
