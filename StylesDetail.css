@@ -630,6 +630,8 @@ main #tuiles h1{
     }
 
     #newsletter #content p{
+      font-size: 19.2px;
+
       text-align: center;
       padding: 0;
     }
