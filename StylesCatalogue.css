@@ -21,13 +21,240 @@
 	--jaune: #F9E259;
 }
 
-body{
-	
 
-	font-family:"Neue Kabel W01 Black" ,Lato, sans-serif;
-	margin: 0%;
+/*----NavBar-----*/
+body {
+	margin:0;
+	  background-color: var(--grisFonce);
+  }
+  
+  body::-webkit-scrollbar {
+	width: 0.5rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background: #6649b8;
+  }
+  
+  main {
+	padding-top: 5rem;
+  }
+  
+  .my-navbar {
+	position: fixed;
+	z-index: 10;
 	background-color: var(--grisFonce);
-}
+  }
+  
+  .my-navbar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  .my-nav-link {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	color: white;
+	background: var(--grisFonce);
+	transition: var(--transition-speed);
+	text-transform: uppercase;
+	font-family: Neue Kabel W01 Black;
+	padding-right: 1.5rem;
+  }
+  
+  .my-nav-link:hover {
+	background: var(--grisClair);
+	color: white;
+  }
+  
+  
+  
+  .my-nav-link svg {
+	height: 2rem;
+	margin: 0 1.5rem;
+  }
+  
+  .my-nav-item:nth-last-child(7){
+	  display: none;
+  }
+  
+  .my-nav-item:nth-last-child(7) img {
+	height: 2rem;
+	margin: 0 1.5rem;
+  }
+  
+  .my-nav-item::after{
+	  position: relative;
+	  content: '';
+	  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	  border-radius: 5px;
+	  background-size: 400%;
+	  z-index: 0;
+	  filter: blur(5px);
+	  transition: opacity .3s ease-in-out;
+	  animation: animate 5s linear infinite;
+	  left: 50%;
+	  display: block;
+	  height: 0.4em;
+	  width: 0%;
+	  transition: ease-in-out .3s;
+	  transform: translateX(-50%);
+  }
+  
+  .my-nav-item:hover::after{
+	  width: 100%;
+  }
+  
+  
+  .fa-primary {
+	color: var(--bleu);
+  }
+  
+  .fa-secondary {
+	color: var(--violet);
+  }
+  
+  .fa-primary,
+  .fa-secondary {
+	transition: var(--transition-speed);
+  }
+  
+  .logo {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	background: var(--grisClair);
+	font-size: 1.5rem;
+	width: 100%;
+  }
+  
+  .logo img {
+	margin: 0 1.5rem;
+	height: 2rem;
+	transform: rotate(0deg);
+	transition: 1200ms;
+  }
+  
+  .my-navbar:hover .logo img {
+	transform: rotate(360deg);
+  }
+  
+  .logo-text
+  {
+	display: inline;
+	position: absolute;
+	left: -999px;
+	transition: var(--transition-speed);
+  }
+  
+  /* Very small screens */
+  @media only screen and (max-width:580px) {
+	.logo {
+	  display: none;
+	}
+  
+	.my-navbar:hover .logo {
+	  display: inline;
+	}
+  }
+  
+  
+  /* Small screens */
+  @media only screen and (max-width: 1380px) {
+	.my-navbar {
+	  top: 0;
+	  width: 100vw;
+	  height: 5rem;
+	}
+	
+	.my-navbar-nav {
+	  flex-direction: row;
+	}
+  
+	main {
+	  margin: 0;
+	}
+  
+	.my-nav-link {
+	  padding: 0;
+	}
+  
+	.link-text {
+	  display: none;
+	  margin-left: 1rem;
+	}
+  
+	.my-nav-item::after{
+	  left: 0%;
+	  transform: translateX(0%);
+	  position: absolute;
+	}
+  
+	.my-nav-item {
+	  width: 100%;
+	}
+  
+	.my-navbar-nav:hover {
+	  flex-direction: column;
+	}
+  
+	.my-navbar:hover .link-text {
+	  display: inline;
+	}
+  
+	.my-navbar:hover .logo img
+	{
+	  margin-left: calc(100vw - 5em);
+	}
+  
+	.logo-text
+	{
+	  left: 0px;
+	}
+  
+	
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 1380px) {
+	.my-navbar {
+	  top: 0;
+	  width: 100vw;
+	  height: 5rem;
+	}
+  
+	.logo {
+	  display: none;
+	}
+  
+  
+	.link-text {
+	  display: inline;
+	}
+  
+	.my-nav-item {
+	  width: auto;
+	}
+  
+	.my-nav-item:nth-last-child(7){
+	  display: inline;
+  }
+  
+	.my-nav-item:nth-last-child(2){
+	  margin-left: auto;
+	}
+  }
+/*-----------FIn nav bar--------*/  
+
 
 
 #content{
@@ -88,64 +315,6 @@ a {
 	text-decoration: none !important; 
 }
 
-nav{
-	width: 100vw;
-	background-color: var(--grisFonce);
-	font-weight: bold;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding: calc(1.5vw) 0;
-}
-
-nav li {
-	overflow-wrap: anywhere;
-}
-
-nav li a {
-	font-family:"Neue Kabel W01 Black" !important;
-	font-size: calc(1.5vw);
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white !important;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-	padding-top: calc(1.5em - 0.75vw);
-	padding-bottom: calc(1.5em - 0.75vw);
-	position: relative;
-}
-
-nav li a::after{
-	position: absolute;
-	content: '';
-	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-	border-radius: 5px;
-	background-size: 400%;
-	z-index: 0;
-	filter: blur(5px);
-	transition: opacity .3s ease-in-out;
-	animation: animate 5s linear infinite;
-	left: 50%;
-	display: block;
-	height: 0.4em;
-	width: 0%;
-	bottom: -0.4em;
-	transition: ease-in-out .3s;
-	transform: translateX(-50%);
-}
-
-nav li a:hover::after{
-	width: 100%;
-}
-
-nav li:nth-last-child(2){
-	margin-left: auto;
-}
 
 
 #nav_selection {
@@ -464,3 +633,106 @@ nav li:nth-last-child(2){
 		background-position: 0 0;
 	}
 }
+
+    /*FOOTER*/
+
+    footer{
+		display: flex !important;
+		flex-direction: row;
+		justify-content: center;
+		background-color: var(--grisFonce);
+		font-family: "DINNextW1G";
+	  }
+  
+	  footer div {
+		padding: 2vw;
+		width: 30vw;
+	  }
+  
+	  footer h2 {
+		font-family:"Neue Kabel W01 Black" !important;
+		text-align: center;
+		color: white;
+		margin-bottom: 11%;
+	  }
+  
+	  footer li {
+		text-decoration: none;
+		color: white;
+	  }
+  
+	  #reseaux {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+  
+	  #reseaux #content {
+		display: flex;
+		padding: 0;
+	  }
+  
+	  #reseaux #content a {
+		width: 100%;
+		margin: 0 7%;
+	  }
+  
+	  #reseaux #content a svg {
+		color: var(--violet);
+	  }
+  
+	  #contact {
+		display: flex;
+		flex-direction: column;
+	  }
+  
+	  #contact #content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		height: 100%;
+	  }
+  
+	  #contact #content li a {
+		color: var(--violet);
+	  }
+  
+	  #contact #content li a:hover {
+		color: #8026d3;
+	  }
+  
+	  #newsletter {
+		display: flex;
+		flex-direction: column;
+	  }
+  
+	  #newsletter #content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	  }
+  
+	  #newsletter #content p{
+		text-align: center;
+		padding: 0;
+	  }
+  
+	  #newsletter #content input {
+		width: 50%;
+		margin-bottom: 10px;
+	  }
+  
+	  #newsletter #content button {
+		border-radius: 10px;
+		border-style: none;
+		color: white;
+		background-color: #922FEE;
+	  }
+  
