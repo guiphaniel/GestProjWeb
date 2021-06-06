@@ -27,7 +27,7 @@ html{
 body {
   margin: 0 ;
   font-size: 14px;
-	background-color: var(--grisFonce) ;
+	background-color: var(--grisFonce)  !important;
 }
 
 body::-webkit-scrollbar {
@@ -306,6 +306,7 @@ main #retour h1 {
 	padding-left:5em;
 	padding-bottom: 2em;;
 	border-radius: 20px;
+  margin-bottom: 3em;
   }
 
   main #tuiles #headBar{
@@ -449,7 +450,7 @@ main #tuiles h1{
 
 /* Override bootstrap column paddings */
 .tz-gallery .row > div {
-    padding: 2px;
+    padding: 0px;
 }
 
 .tz-gallery .lightbox img {
