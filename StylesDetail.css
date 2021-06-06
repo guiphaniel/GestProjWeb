@@ -23,53 +23,50 @@
 }
 
 body {
-  margin:0;
-  background-color: black;	
-
+  margin: 0 !important;
+	background-color: var(--grisFonce) !important;
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5rem !important;
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #1e1e24 !important;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #6649b8 !important;
 }
 
 main {
-  padding-top: 5rem;
+  padding-top: 5rem !important;
 }
 
 .my-navbar {
-  position: fixed;
-  z-index: 10;
-  background-color: var(--grisFonce);
+  position: fixed !important;
+  z-index: 10 !important;
+  background-color: var(--grisFonce)!important;
 }
 
 .my-navbar-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
-
-
 .my-nav-link {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  color: white;
-  background: var(--grisFonce);
-  transition: var(--transition-speed);
-  text-transform: uppercase;
+  display: flex !important;
+  align-items: center !important;
+  height: 5rem !important;
+  color: white !important;
+  background: var(--grisFonce) !important;
+  transition: var(--transition-speed) !important;
+  text-transform: uppercase !important;
   font-family: Neue Kabel W01 Black !important;
-  padding-right: 1.5rem;
+  padding-right: 1.5rem !important;
 }
 
 .my-nav-link:hover {
@@ -80,32 +77,39 @@ main {
 
 
 .my-nav-link svg {
-  height: 2rem;
-
-  margin: 0 1.5rem;
+  height: 2rem !important;
+  margin: 0 1.5rem !important;
 }
 
+.my-nav-item:nth-last-child(7){
+    display: none !important;
+}
+
+.my-nav-item:nth-last-child(7) img {
+  height: 2rem !important;
+  margin: 0 1.5rem !important;
+}
 
 .my-nav-item::after{
-	position: relative;
-	content: '';
-	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-	border-radius: 5px;
-	background-size: 400%;
-	z-index: 0;
-	filter: blur(5px);
-	transition: opacity .3s ease-in-out;
-	animation: animate 5s linear infinite;
-	left: 50%;
-	display: block;
-	height: 0.4em;
-	width: 0%;
-	transition: ease-in-out .3s;
-	transform: translateX(-50%);
+	position: relative !important;
+	content: '' !important;
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000) !important;
+	border-radius: 5px !important;
+	background-size: 400% !important;
+	z-index: 0 !important;
+	filter: blur(5px) !important;
+	transition: opacity .3s ease-in-out !important;
+	animation: animate 5s linear infinite !important;
+	left: 50% !important;
+	display: block !important;
+	height: 0.4em !important;
+	width: 0% !important;
+	transition: ease-in-out .3s !important;
+	transform: translateX(-50%) !important;
 }
 
 .my-nav-item:hover::after{
-	width: 100%;
+	width: 100% !important;
 }
 
 
@@ -123,20 +127,20 @@ main {
 }
 
 .logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  background: var(--grisClair);
-  font-size: 1.5rem;
-  width: 100%;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  color: white !important;
+  background: var(--grisClair) !important;
+  font-size: 1.5rem !important;
+  width: 100% !important;
 }
 
 .logo img {
-  margin: 0 1.5rem;
-  height: calc(100% - 2.5rem);
-  transform: rotate(0deg);
-  transition: 1200ms;
+  margin: 0 1.5rem !important;
+  height: 2rem !important;
+  transform: rotate(0deg)!important;
+  transition: 1200ms !important;
 }
 
 .my-navbar:hover .logo img {
@@ -145,119 +149,123 @@ main {
 
 .logo-text
 {
-  display: inline;
-  position: absolute;
-  left: -999px;
-  transition: var(--transition-speed);
+  display: inline !important;
+  position: absolute !important;
+  left: -999px !important;
+  transition: var(--transition-speed) !important;
 }
 
 /* Very small screens */
 @media only screen and (max-width:580px) {
   .logo {
-    display: none;
+    display: none !important;
   }
 
   .my-navbar:hover .logo {
-    display: inline;
+    display: inline !important;
   }
 }
 
 
 /* Small screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1380px) {
   .my-navbar {
-    top: 0;
-    width: 100vw;
-    height: 5rem;
+    top: 0 !important;
+    width: 100vw !important;
+    height: 5rem !important;
   }
   
   .my-navbar-nav {
-    flex-direction: row;
+    flex-direction: row !important;
   }
 
   main {
-    margin: 0;
+    margin: 0 !important;
   }
 
   .my-nav-link {
-    padding: 0;
+    padding: 0 !important;
   }
 
   .link-text {
     display: none;
-    margin-left: 1rem;
+    margin-left: 1rem !important;
   }
 
   .my-nav-item::after{
-    left: 0%;
-    transform: translateX(0%);
-    position: absolute;
+    left: 0% !important;
+    transform: translateX(0%) !important;
+    position: absolute !important;
   }
 
   .my-nav-item {
-    width: 100%;
+    width: 100% !important;
   }
 
   .my-navbar-nav:hover {
-    flex-direction: column;
-  }
-
-  .my-navbar:hover {
-    width: 100vw;
+    flex-direction: column !important;
   }
 
   .my-navbar:hover .link-text {
-    display: inline;
+    display: inline !important;
   }
 
   .my-navbar:hover .logo img
   {
-    margin-left: calc(100vw - 5em);
+    margin-left: calc(100vw - 5em) !important;
   }
 
   .logo-text
   {
-    left: 0px;
+    left: 0px !important;
   }
+
+  
 }
 
 /* Large screens */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1380px)  {
   .my-navbar {
-    top: 0;
-    width: 100vw;
-    height: 5rem;
+    top: 0 !important;
+    width: 100vw !important;
+    height: 5rem !important;
   }
 
   .logo {
-    display: none;
+    display: none !important;
   }
 
 
   .link-text {
-    display: inline;
+    display: inline !important;
   }
 
   .my-nav-item {
-    width: auto;
+    width: auto !important;
   }
 
+  .my-nav-item:nth-last-child(7){
+    display: inline !important;
+}
+
   .my-nav-item:nth-last-child(2){
-    margin-left: auto;
+    margin-left: auto !important;
   }
 }
 
 
+
+
 html{
-	background-color: var(--grisFonce);
+	background-color: var(--grisFonce) !important;
 }
   
   main{
    
-    background-color: var(--grisFonce);
-    padding-top: 5em;
-	padding-left: 5em;
-	padding-right: 5em;
+    background-color: var(--grisFonce) !important;
+    padding-top: 5em !important;
+	padding-left: 5em !important;
+	padding-right: 5em !important;
     
   }
 
@@ -523,3 +531,105 @@ main #tuiles h1{
 .bg-trans a:hover{
   background-size: 100%;
 }
+
+    /*FOOTER*/
+
+    footer{
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      background-color: var(--grisFonce);
+      font-family: "DINNextW1G";
+    }
+
+    footer div {
+      padding: 2vw;
+      width: 30vw;
+    }
+
+    footer h2 {
+      font-family:"Neue Kabel W01 Black" !important;
+      text-align: center;
+      color: white;
+      margin-bottom: 11%;
+    }
+
+    footer li {
+      text-decoration: none;
+      color: white;
+    }
+
+    #reseaux {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #reseaux #content {
+      display: flex;
+      padding: 0;
+    }
+
+    #reseaux #content a {
+      width: 100%;
+      margin: 0 7%;
+    }
+
+    #reseaux #content a svg {
+      color: var(--violet);
+    }
+
+    #contact {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #contact #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    #contact #content li a {
+      color: var(--violet);
+    }
+
+    #contact #content li a:hover {
+      color: #8026d3;
+    }
+
+    #newsletter {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #newsletter #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #newsletter #content p{
+      text-align: center;
+      padding: 0;
+    }
+
+    #newsletter #content input {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    #newsletter #content button {
+      border-radius: 10px;
+      border-style: none;
+      color: white;
+      background-color: #922FEE;
+    }
