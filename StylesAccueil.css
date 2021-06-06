@@ -24,7 +24,8 @@
 
 body {
   margin:0;
-	background-color: var(--grisFonce);
+	background-color: var(--grisFonce) !important;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -94,7 +95,7 @@ main {
 	position: relative;
 	content: '';
 	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-	border-radius: 5px;
+	border-radius: 20px;
 	background-size: 400%;
 	z-index: 0;
 	filter: blur(5px);
@@ -288,7 +289,7 @@ main {
 
   
   #catalogue{
-    background-color: var(--grisFonce);
+    background-color: var(--grisClair);
     margin-top: 0;
   }
 
@@ -344,7 +345,7 @@ main {
       width: 80vw;
       margin: 2vw;
       margin-top: 0;
-      border-radius: 5px;
+      border-radius: 20px;
   }
   
   #evenement p {
@@ -518,7 +519,7 @@ main {
   
   #tuiles .RGB img{
     width: 100%;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
   }
   
   #tuiles{
@@ -537,7 +538,7 @@ main {
       height: 100%;
       margin-right: auto;
       margin-left: auto;
-      border-radius: 5px;
+      border-radius: 20px;
   }
   
   #tuiles .RGB p{
@@ -560,7 +561,7 @@ main {
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    border-radius: 5px;
+    border-radius: 20px;
     background-size: 400%;
     z-index: -1;
     opacity: 0;

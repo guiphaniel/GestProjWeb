@@ -24,7 +24,8 @@
 
 body {
   margin:0;
-	background-color: var(--grisFonce);
+	background-color: var(--grisFonce) !important;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -301,7 +302,18 @@ main {
 #description {
 	padding: 2vw;
 	background-color: var(--grisFonce); 
-	height: 80vw;
+
+}
+
+#description p {
+	margin: 0;
+}
+
+#description div {
+  padding: 10px;;
+  border-radius: 20px;
+  background-color: var(--grisClair);
+  margin: 20px 0;
 }
 
 /*Tuiles RGB*/
@@ -387,9 +399,9 @@ main {
 /*Titres*/
 
 .bg-trans {		
-	font-size: 2vw;
+	font-size: calc(1em + 1vw);
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	display: flex;
 	padding: 0;
 	padding-top: 2vw;
