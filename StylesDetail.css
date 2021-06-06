@@ -645,3 +645,41 @@ main #tuiles h1{
       color: white;
       background-color: #922FEE;
     }
+
+    .card {
+      position: relative;
+      display: flex;
+      padding: 20px;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border-radius: 20px !important;
+      background-color: var(--grisClair) !important;
+      color: white;
+  }
+  
+  .media img {
+      width: 60px;
+      height: 60px
+  }
+  
+  .reply a {
+      text-decoration: none
+  }
+
+
+  @media (min-width: 768px) {
+    .col-md-8 {
+        -ms-flex: 0 0 66.666667% !important;
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+
+    .col-md-4 {
+      -ms-flex: 0 0 33.333333%!important;
+      flex: 0 0 50%!important;
+      max-width: 50%!important;
+  }
+  }
