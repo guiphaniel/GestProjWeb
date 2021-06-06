@@ -434,6 +434,7 @@ p{
 	padding-right: 1em;
 	padding-left: 1em; 
 	font-family: DINNextW1G !important;
+  font-size: 20px;
 	color: white;
 	width: auto;
  	overflow: hidden;
@@ -443,4 +444,25 @@ p{
 
 a {
 	text-decoration: none !important; 
+}
+
+main #partie{
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+
+}
+main #partie img{
+  alt: unset;
+  
+  width: 40%;
+  border-radius: 20px;
+  
+}
+main #partie div{
+  flex: 1;
+  margin-left: 2em;
 }
