@@ -397,21 +397,6 @@ main #tuiles #details #caract ul li p{
     }
   }
   
-  /*Titres*/
-
-
-
-main #tuiles h1{
-  font-size: 3em;
-	font-family:"Neue Kabel W01 Black" !important;
-	padding: 0;
-	margin: 0 !important;
-
-  text-transform: uppercase;
-  color: white !important;
-
-}
-  
   /*Textes*/
   
   p{
@@ -510,7 +495,7 @@ main #tuiles h1{
 
 
 .bg-trans {		
-  font-size: 1em;
+  font-size: 2em;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -539,6 +524,40 @@ main #tuiles h1{
 
 .bg-trans a:hover{
   background-size: 100%;
+}
+
+.bg-trans-2 {		
+  font-size: 3em;
+	font-family:"Neue Kabel W01 Black" !important;
+	padding: 0;
+	margin: 0 !important;
+
+  text-transform: uppercase;
+  color: white !important;
+	margin-top: 0;
+	margin-bottom: 10px;
+	display: flex;
+	padding: 0;
+	padding-top: 2vw;
+	padding: 0;
+	background-color: white;
+	background-image: linear-gradient(#f9a602, #f9a602);
+	background-size: 0%;
+	background-repeat: no-repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:transparent !important;
+	position: relative;
+	transition-property: background-size;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.3s;
+}
+
+
+.bg-trans-2:hover{
+	background-size: 100%;
 }
 
     /*FOOTER*/
