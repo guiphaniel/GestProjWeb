@@ -21,52 +21,60 @@
 	--jaune: #F9E259;
   --transition-speed: 600ms;
 }
-
+html{
+  font-size: 16px !important ;
+}
 body {
-  margin: 0 !important;
-	background-color: var(--grisFonce) !important;
+  margin: 0 ;
+  font-size: 14px;
+	background-color: var(--grisFonce) ;
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem !important;
+  width: 0.5rem ;
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24 !important;
+  background: #1e1e24 ;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8 !important;
+  background: #6649b8 ;
 }
 
 main {
-  padding-top: 5rem !important;
+  padding-top: 5rem ;
 }
 
 .my-navbar {
-  position: fixed !important;
-  z-index: 10 !important;
-  background-color: var(--grisFonce)!important;
+  
+  position: fixed ;
+  z-index: 10 ;
+  background-color: var(--grisFonce);
 }
 
 .my-navbar-nav {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: flex !important;
-  align-items: center !important;
+  list-style: none ;
+  padding: 0 ;
+  margin: 0 ;
+  display: flex ;
+  align-items: center ;
 }
 
 .my-nav-link {
-  display: flex !important;
-  align-items: center !important;
-  height: 5rem !important;
-  color: white !important;
-  background: var(--grisFonce) !important;
-  transition: var(--transition-speed) !important;
-  text-transform: uppercase !important;
-  font-family: Neue Kabel W01 Black !important;
-  padding-right: 1.5rem !important;
+  display: flex ;
+  align-items: center ;
+  height: 5rem ;
+  
+  color: white ;
+  background: var(--grisFonce) ;
+  transition: var(--transition-speed) ;
+  text-transform: uppercase ;
+  font-family: Neue Kabel W01 Black ;
+  padding-right: 1.5rem ;
+}
+.my-nav-link span{
+  font-size: 16px !important;
 }
 
 .my-nav-link:hover {
@@ -77,39 +85,39 @@ main {
 
 
 .my-nav-link svg {
-  height: 2rem !important;
-  margin: 0 1.5rem !important;
+  height: 2rem  ;
+  margin: 0 1.5rem ;
 }
 
 .my-nav-item:nth-last-child(7){
-    display: none !important;
+    display: none ;
 }
 
 .my-nav-item:nth-last-child(7) img {
-  height: 2rem !important;
-  margin: 0 1.5rem !important;
+  height: 2rem ;
+  margin: 0 1.5rem ;
 }
 
 .my-nav-item::after{
-	position: relative !important;
-	content: '' !important;
-	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000) !important;
-	border-radius: 5px !important;
-	background-size: 400% !important;
-	z-index: 0 !important;
-	filter: blur(5px) !important;
-	transition: opacity .3s ease-in-out !important;
-	animation: animate 5s linear infinite !important;
-	left: 50% !important;
-	display: block !important;
-	height: 0.4em !important;
-	width: 0% !important;
-	transition: ease-in-out .3s !important;
-	transform: translateX(-50%) !important;
+	position: relative ;
+	content: '' ;
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000) ;
+	border-radius: 5px ;
+	background-size: 400% ;
+	z-index: 0 ;
+	filter: blur(5px) ;
+	transition: opacity .3s ease-in-out ;
+	animation: animate 5s linear infinite ;
+	left: 50% ;
+	display: block ;
+	height: 0.4em ;
+	width: 0% ;
+	transition: ease-in-out .3s ;
+	transform: translateX(-50%) ;
 }
 
 .my-nav-item:hover::after{
-	width: 100% !important;
+	width: 100% ;
 }
 
 
@@ -127,20 +135,20 @@ main {
 }
 
 .logo {
-  font-weight: bold !important;
-  text-transform: uppercase !important;
-  text-align: center !important;
-  color: white !important;
-  background: var(--grisClair) !important;
-  font-size: 1.5rem !important;
-  width: 100% !important;
+  font-weight: bold ;
+  text-transform: uppercase ;
+  text-align: center ;
+  color: white ;
+  background: var(--grisClair) ;
+  font-size: 1.5rem ;
+  width: 100% ;
 }
 
 .logo img {
-  margin: 0 1.5rem !important;
-  height: 2rem !important;
-  transform: rotate(0deg)!important;
-  transition: 1200ms !important;
+  margin: 0 1.5rem ;
+  height: 2rem ;
+  transform: rotate(0deg);
+  transition: 1200ms ;
 }
 
 .my-navbar:hover .logo img {
@@ -149,20 +157,20 @@ main {
 
 .logo-text
 {
-  display: inline !important;
-  position: absolute !important;
-  left: -999px !important;
-  transition: var(--transition-speed) !important;
+  display: inline ;
+  position: absolute ;
+  left: -999px ;
+  transition: var(--transition-speed) ;
 }
 
 /* Very small screens */
 @media only screen and (max-width:580px) {
   .logo {
-    display: none !important;
+    display: none ;
   }
 
   .my-navbar:hover .logo {
-    display: inline !important;
+    display: inline ;
   }
 }
 
@@ -170,54 +178,54 @@ main {
 /* Small screens */
 @media only screen and (max-width: 1380px) {
   .my-navbar {
-    top: 0 !important;
-    width: 100vw !important;
-    height: 5rem !important;
+    top: 0 ;
+    width: 100vw ;
+    height: 5rem ;
   }
   
   .my-navbar-nav {
-    flex-direction: row !important;
+    flex-direction: row ;
   }
 
   main {
-    margin: 0 !important;
+    margin: 0 ;
   }
 
   .my-nav-link {
-    padding: 0 !important;
+    padding: 0 ;
   }
 
   .link-text {
     display: none;
-    margin-left: 1rem !important;
+    margin-left: 1rem ;
   }
 
   .my-nav-item::after{
-    left: 0% !important;
-    transform: translateX(0%) !important;
-    position: absolute !important;
+    left: 0% ;
+    transform: translateX(0%) ;
+    position: absolute ;
   }
 
   .my-nav-item {
-    width: 100% !important;
+    width: 100% ;
   }
 
   .my-navbar-nav:hover {
-    flex-direction: column !important;
+    flex-direction: column ;
   }
 
   .my-navbar:hover .link-text {
-    display: inline !important;
+    display: inline ;
   }
 
   .my-navbar:hover .logo img
   {
-    margin-left: calc(100vw - 5em) !important;
+    margin-left: calc(100vw - 5em) ;
   }
 
   .logo-text
   {
-    left: 0px !important;
+    left: 0px ;
   }
 
   
@@ -226,30 +234,30 @@ main {
 /* Large screens */
 @media only screen and (min-width: 1380px)  {
   .my-navbar {
-    top: 0 !important;
-    width: 100vw !important;
-    height: 5rem !important;
+    top: 0 ;
+    width: 100vw ;
+    height: 5rem ;
   }
 
   .logo {
-    display: none !important;
+    display: none ;
   }
 
 
   .link-text {
-    display: inline !important;
+    display: inline ;
   }
 
   .my-nav-item {
-    width: auto !important;
+    width: auto ;
   }
 
   .my-nav-item:nth-last-child(7){
-    display: inline !important;
+    display: inline ;
 }
 
   .my-nav-item:nth-last-child(2){
-    margin-left: auto !important;
+    margin-left: auto ;
   }
 }
 
@@ -262,10 +270,10 @@ html{
   
   main{
    
-    background-color: var(--grisFonce) !important;
-    padding-top: 5em !important;
-	padding-left: 5em !important;
-	padding-right: 5em !important;
+    background-color: var(--grisFonce) ;
+    
+	  padding-left: 5em ;
+	  padding-right: 5em ;
     
   }
 
