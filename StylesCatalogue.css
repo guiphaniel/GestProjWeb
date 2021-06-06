@@ -37,7 +37,7 @@ body {
   }
   
   body::-webkit-scrollbar-thumb {
-	background: #6649b8;
+	background: var(--violet);
   }
   
   main {
@@ -573,18 +573,6 @@ a {
 	background-color: #8229d4;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .RGB {
 	color: white;
 	position: relative;
@@ -643,7 +631,10 @@ a {
 		justify-content: center;
 		background-color: var(--grisFonce);
 		font-family: "DINNextW1G";
-	  }
+		border-top: solid;
+		border-width: 10px;
+		border-color: var(--violet);
+	}
   
 	  footer div {
 		padding: 2vw;
