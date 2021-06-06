@@ -39,7 +39,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8 ;
+  background: var(--violet);
 }
 
 main {
@@ -548,6 +548,9 @@ main #tuiles h1{
       justify-content: center;
       background-color: var(--grisFonce);
       font-family: "DINNextW1G";
+      border-top: solid;
+      border-width: 10px;
+      border-color: var(--violet);
     }
 
     footer div {
